@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $div = $("div");
+            $div.css({"backgroundColor":"pink"});
+            var $divp = $div.has('p');
+            $divp.css({"fontSize":"30px"});
+            var $divNotMyClass = $div.not('.myClass');
+            $divNotMyClass.css({"color":"red"});
+            var $divMyClass = $div.filter('.myClass');
+            $divMyClass.css({"color":"yellow"});
+            var $div6 = $div.eq(5);
+            $div6.css({"text-indent":"25px"});
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div>1</div>
+    <div><p>2</p></div>
+    <div class="myClass">3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</body>
+</html>
